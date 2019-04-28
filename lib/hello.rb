@@ -10,7 +10,7 @@ def hello_t(array)
 #  puts "Hey! No block was given!"
 #end
 if block_given?
-array.collect {|x| yield(x)}
+array.each {|x| yield(x)}
 else
 puts "Hey! No block was given!"
 end
